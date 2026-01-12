@@ -39,7 +39,7 @@ body{display: grid;
 }
 
 .Dashboard{
-    gap: 0px;
+    gap: 1px;
     font-size: 30px;
     font-weight: bold;
     padding-top: 20px;
