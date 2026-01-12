@@ -6,7 +6,10 @@
 
 body{display: grid;
    grid-template-columns: 1fr 5fr;
-   grid-template-rows: 1fr 3fr;
+   grid-template-rows: 1fr 5fr;
+   height: 100vh;
+   overflow: hidden;
+
    
 }
 .sidebar{
@@ -14,7 +17,7 @@ body{display: grid;
     color: white;
     display: grid;
     grid-template-rows: auto auto auto 1fr;
-    height: 100vh;
+    height: 100%;
    gap: 30px;
    font-size: 18px;
    grid-row: 1/3;
@@ -57,14 +60,8 @@ body{display: grid;
     border-radius: 100%;
 }
 
-.Main{
-    background-color: rgb(226, 232, 240);
-    
-
-}
-
 .Top {
-    padding: 20px 50px;
+    padding: 5px 50px;
     background-color: white;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -81,7 +78,7 @@ body{display: grid;
     background-color: rgb(226, 232, 240);
     border-radius: 20px;
     height: 30px;
-    width: 700px;
+    width: 600px;
     padding: 0 15px;
 }
 
@@ -105,4 +102,117 @@ body{display: grid;
 
 .Horse-img{
     grid-row: 1/3;
+}
+
+
+.buttons>span {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buttons>span:hover {
+    background-color: #0056b3;
+}
+
+.Top-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main{
+     padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(226, 232, 240);
+}
+
+.projects-section{
+    grid-row: 1/3;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.project-card{
+background-color: white;
+ border-left: 5px solid orange; 
+  border-radius: 10px;
+ padding: 40px 20px 80px;
+  position: relative;
+}
+.project-icons{
+position: absolute;
+    bottom: 10px; /* Positions the icons 10px from the bottom of the card */
+    right: 10px; /* Positions the icons 10px from the right of the card */
+    padding-top: 0; /* Removes top padding */
+    padding-left: 0; /* Removes left padding */
+}
+
+.project-icons> img {
+    margin-right: 10px;
+}
+
+.projects-section img {
+    height: 20px;
+    width: auto; 
+}
+.trending-section img{
+    height: 60px;
+}
+
+
+.announcement-grid{
+    border-radius: 10px;
+     padding: 20px;
+     background-color: white;
+     display: grid;
+     grid-template-rows: auto;
+     gap: 20px;
+
+}
+
+.announcement{
+    align-self: center;
+}
+
+.row-border{
+    border-top: 2px dashed gray;
+    grid-column: 1 / 5;
+}
+
+.trending-section{
+    display: flex;
+    flex-direction: column;
+     border-radius: 10px;
+     padding: 20px;
+     background-color: white;
+}
+
+.trending-grid{
+
+     display: grid;
+     grid-template-rows: auto;
+     gap: 10px;
+
+}
+.trending-card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.trending-profile{
+    align-self: center;
 }
