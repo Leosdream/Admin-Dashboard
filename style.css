@@ -128,7 +128,7 @@ body{display: grid;
 }
 
 .Main{
-     padding: 20px;
+  padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -197,9 +197,6 @@ position: absolute;
 .trending-section{
     display: flex;
     flex-direction: column;
-     border-radius: 10px;
-     padding: 20px;
-     background-color: white;
 }
 
 .trending-grid{
@@ -207,7 +204,9 @@ position: absolute;
      display: grid;
      grid-template-rows: auto;
      gap: 10px;
-
+    background-color: white;
+    border-radius: 10px;
+     padding: 20px;
 }
 .trending-card{
     display: grid;
