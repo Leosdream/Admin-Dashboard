@@ -156,10 +156,10 @@ background-color: white;
 }
 .project-icons{
 position: absolute;
-    bottom: 10px; /* Positions the icons 10px from the bottom of the card */
-    right: 10px; /* Positions the icons 10px from the right of the card */
-    padding-top: 0; /* Removes top padding */
-    padding-left: 0; /* Removes left padding */
+    bottom: 10px; 
+    right: 10px; 
+    padding-top: 0; 
+    padding-left: 0; 
 }
 
 .project-icons> img {
